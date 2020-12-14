@@ -1,0 +1,256 @@
+<!--Com base no material disponibilizado sobre HTML 5 e/ou outros materiais complementares,
+faça uma página que utilize os principais elementos, tipos e atributos novos da linguagem HTML 5.
+Pesquise também exemplos na Internet de sites que exploram a parte gráfica do HTML 5, listando alguns links.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício de HTML 3</title>
+        <link rel="stylesheet" type="text/css" href="exercicio4Style.css">
+        <script src="exercicio4JS.js"></script>
+    </head>
+
+    <body>
+
+        <h1 class="title"><marquee>Filmes</marquee></h1><br />
+        <h2 class="subtitle"><br />Maiores Bilheterias de Filmes da História:</h2>
+        <p class="subtitle2">(Até 2020) Segundo o site <a href="https://www.omelete.com.br/marvel-cinema/vingadores-ultimato-endgame/vingadores-ultimato-10-maiores-bilheterias-da-historia#4" target="blank">Omelete</a>.</p><br /><!--Tag para parágrafo-->
+        <table class="rankingtable">
+        
+            <tr>
+                <th>Ranking</th>
+                <th>Nome</th>
+                <th>Custo de Produção</th>
+                <th>Arrecadação Total</th>
+                <th>Ano</th>
+            </tr>
+        
+            <tr>
+                <td>1º</td>
+                <td>Vingadores: Ultimato</td>
+                <td>400 milhões</td>
+                <td>2,797 bilhões</td>
+                <td>2019</td>
+            </tr>
+            
+            <tr>
+                <td>2º</td>
+                <td>Avatar</td>
+                <td>237 milhões</td>
+                <td>2,789 bilhões</td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Titanic</td>
+                <td>200 milhões</td>
+                <td>2,187 bilhões</td>
+                <td>1997</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td>Star Wars: O Despertar da Força</td>
+                <td>245 milhões</td>
+                <td>2,068 bilhões</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td>Vingadores: Guerra Infinita</td>
+                <td>400 milhões</td>
+                <td>2,048 bilhões</td>
+                <td>2018</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td>Jurassic World: O Mundo dos Dinossauros</td>
+                <td>150 milhões</td>
+                <td>1,671 bilhão</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>7º</td>
+                <td>O Rei Leão</td>
+                <td>260 milhões</td>
+                <td>1,656 bilhão</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td>Os Vingadores</td>
+                <td>220 milhões</td>
+                <td>1,518 bilhão</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td>Velozes e Furiosos 7</td>
+                <td>190 milhões</td>
+                <td>1,515 bilhão</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>10º</td>
+                <td>Frozen 2</td>
+                <td>150 milhões</td>
+                <td>1,450 bilhão</td>
+                <td>2019</td>
+            </tr>
+        </table><br /><br />
+
+        <form action="test.php">
+
+            <div class="questions">
+                <h3 class="subtitle">De acordo com o ranking de filmes:</h3><br />
+                
+                <label for="escolha1">Qual filme você mais gostou?</label><br />
+                <select name="escolha1" id="escolha1">
+                    <option value="0" selected disabled>Selecionar...</option>
+                    <option value="op1">Vingadores: Ultimato</option>
+                    <option value="op2">Avatar</option>
+                    <option value="op3">Titanic</option>
+                    <option value="op4">Star Wars: O Despertar da Força</option>
+                    <option value="op5">Vingadores: Guerra Infinita</option>
+                    <option value="op6">Jurassic World: O Mundo dos Dinossauros</option>
+                    <option value="op7">O Rei Leão</option>
+                    <option value="op8">Os Vingadores</option>
+                    <option value="op9">Velozes e Furiosos 7</option>
+                    <option value="op10">Frozen 2</option>
+                </select><br /><br /><br />
+                
+
+                <label for="escolha2">De 0 a 10, qual a nota do filme?</label><br />
+                <select name="escolha4" id="escolha4">  
+                    <option value="0" selected disabled>Selecionar...</option>
+                    <option value="op0">0</option>
+                    <option value="op1">1</option>
+                    <option value="op2">2</option>
+                    <option value="op3">3</option>
+                    <option value="op4">4</option>
+                    <option value="op5">5</option>
+                    <option value="op6">6</option>
+                    <option value="op7">7</option>
+                    <option value="op8">8</option>
+                    <option value="op9">9</option>
+                    <option value="op10">10</option>
+                </select><br /><br /><br />
+
+                <label for="escolha3">Qual filme você menos gostou?</label><br />
+                <select name="escolha3" id="escolha3">
+                    <option value="0" selected disabled>Selecionar...</option>
+                    <option value="op1">Vingadores: Ultimato</option>
+                    <option value="op2">Avatar</option>
+                    <option value="op3">Titanic</option>
+                    <option value="op4">Star Wars: O Despertar da Força</option>
+                    <option value="op5">Vingadores: Guerra Infinita</option>
+                    <option value="op6">Jurassic World: O Mundo dos Dinossauros</option>
+                    <option value="op7">O Rei Leão</option>
+                    <option value="op8">Os Vingadores</option>
+                    <option value="op9">Velozes e Furiosos 7</option>
+                    <option value="op10">Frozen 2</option>
+                </select><br /><br /><br />
+                
+                <label for="escolha4">De 0 a 10, qual a nota do filme?</label><br />
+                <select name="escolha4" id="escolha4">  
+                    <option value="0" selected disabled>Selecionar...</option>
+                    <option value="op0">0</option>
+                    <option value="op1">1</option>
+                    <option value="op2">2</option>
+                    <option value="op3">3</option>
+                    <option value="op4">4</option>
+                    <option value="op5">5</option>
+                    <option value="op6">6</option>
+                    <option value="op7">7</option>
+                    <option value="op8">8</option>
+                    <option value="op9">9</option>
+                    <option value="op10">10</option>
+                </select><br /><br /><br />
+                
+                <label for="escolha5">Existe algum filme que você acha que deveria estar nesse ranking?</label><br />
+                    <input type="text" id="escolha5" name="escolha5" placeholder="Digite o nome do filme aqui*"><br /><br />
+
+                <p>Quais gêneros de filme você gosta?</p>
+                <input type="checkbox" id="op1" name="op1">
+                <label for="op1">Ação</label><br />
+                <input type="checkbox" id="op2" name="op2">
+                <label for="op2">Aventura</label><br />
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op3">Comédia</label><br />
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op4">Documentário</label><br />
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op5">Drama</label><br />
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op6">Ficção Científica</label><br />
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op7">Musical</label><br />
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op8">Romance</label><br />
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op9">Terror/Suspense</label><br /><br />
+
+                <p>Você prefere:</p>
+                <input type="radio" id="op" name="op">
+                <label for="op">Filmes</label><br />
+                <input type="radio" id="op" name="op">
+                <label for="op">Novelas</label><br />
+                <input type="radio" id="op" name="op">
+                <label for="op">Séries</label><br /><br /><br />
+
+                <label for="comentario">Sinta-se a vontade para deixar um comentário abaixo!</label>
+                <br />
+                <textarea id="comentario" name="comentario" rows="4" cols="50">Digite aqui!
+                </textarea><br /><br />
+
+                <label for="nome">Qual o seu nome:</label><br />
+                <input type="text" id="nomeid" name="nome" placeholder="Digite seu nome aqui*"><br /><br /><br />
+
+                <input class="button" type="submit" onclick="Submit()"; value="Submit">
+                <input class="button" type="reset"> 
+            </div>
+        </form><br /><br />
+
+        <?php
+            if (isset($_POST["acao"])){
+            echo "<script>alert('Formulário Foi enviado pelo método POST')</script>";
+            }
+        ?>
+<hr>
+        <div class="sugestion">
+            <h3><br />Algumas recomendações de filmes para você assistir na <a href="https://www.netflix.com/br/" target="blank">Netflix</a>:</h3>
+            <dl>
+                <dt><a href="https://www.netflix.com/br/title/80047616#:~:text=Estressada%20com%20o%20mundo%20da,um%20estagi%C3%A1rio%20vi%C3%BAvo%20e%20septuagen%C3%A1rio.&text=Assista%20o%20quanto%20quiser." target="blank">O Estagiário</a></dt><!--Tag para definir um termo da lista-->
+                <dd>Estressada com o mundo da moda, a empresária Jules recebe ajuda e inspiração de quem menos esperava: Ben, um estagiário viúvo e septuagenário.</dd><br />
+                <dt><a href="https://www.netflix.com/br/title/81038963" target="blank">The Old Guard</a></dt>
+                <dd>Quatro guerreiros com o dom da imortalidade protegem a humanidade há séculos. Mas seus misteriosos poderes viram alvo de ataque quando outra imortal entra em cena.</dd><br />
+                <dt><a href="https://www.netflix.com/br/title/81232236" target="blank">O Segredo: Ouse Sonhar</a></dt>
+                <dd>Atravessando um momento difícil, uma viúva conhece um professor misterioso que guarda uma informação reveladora.</dd><br />
+                <dt><a href="https://www.netflix.com/br/title/80196789" target="blank">Bird Box</a></dt>
+                <dd>Uma misteriosa presença leva as pessoas ao suicídio. Cinco anos depois, uma sobrevivente e seus dois filhos saem em busca de um abrigo seguro.</dd><br />
+                <dt><a href="https://www.netflix.com/br/title/80095365" target="blank">La La Land: Cantando Estações</a></dt>
+                <dd>Em Los Angeles, um casal de artistas precisa enfrentar um doloroso dilema quando os projetos profissionais de cada um colocam em risco o romance entre os dois.</dd><br />
+                <dt><a href="https://www.netflix.com/br/title/80142090" target="blank">Baby Driver: Em Ritmo de Fuga</a></dt>
+                <dd>Baby é um motorista de fuga que está em dívida com um chefão do crime. Ele só precisa fazer mais um trabalho, mas é agora que tudo vai dar errado.</dd><br />
+                <dt><a href="https://www.netflix.com/br/title/80177770" target="blank">It</a></dt>
+                <dd>Em uma cidade onde as crianças desaparecem, um grupo de jovens precisa encarar seus maiores medos e enfrentar um palhaço assassino assustador e aparentemente invencível.</dd>
+            </dl><br>
+            <hr>
+            <h3>Sites que exploram a parte gráfica do HTML/CSS:</h3>
+            <ul type="circle"> <!--Tag para uma lista não ordenada, lista normal
+                type="disc"---------------------------Ponto circular preenchido
+                type="circle"-------------------------Ponto circular vazado
+                type="square"-------------------------Ponto em forma de quadrado-->
+                <li><a href="https://resn.co.nz/" target="blank">Resn</a> usa CSS combinado com tecnologias 3D aplicado com canvas e Javascript.</li><!--Tag para definir um item da lista-->
+                <li><a href="https://www.exteta.it/en/" target="blank">Exteta</a> utiliza CSS junto ao JavaScript.</li>
+                <li><a href="https://aerolab.co/" target="blank">Aerolab</a>, de forma minimalista, usa uma aplicação complexa de JavaScript e CSS</li>
+                <li><a href="http://matthew.wagerfield.com/parallax/" target="blank">Parallax</a> usa muitas camadas CSS e uma aplicação sublime do parallax em Javascript</li>
+            </ul><br />
+            <hr>
+            <p>By Luara Bruning (OTES02 - Aplicações e Desenvolvimento Web)</p>
+        </div>
+    </body>
+
+</html>
